@@ -1,0 +1,154 @@
+
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Chris Hume's personal website">
+    <meta name="keywords" content="Chris Hume, Web, Recommenu, Developer, Engineer, Awesome, Tutorial">
+    <meta name="author" content="Chris Hume">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li class="logo">Chris Hume</li>
+        <li><a href="#about-preview">About</a></li>
+        <li>Blog</li>
+        <li>Holler</li>
+      </ul>
+    </nav>
+    <div class="full-screen-back">
+      <div>
+        <h1>Hello</h1>
+        <h4>Welcome to my site</h4>
+      </div>
+    </div>
+
+    <section class="about-preview" id="about-preview">
+      <div>
+        <img src="chris.png" class="profilePicture" alt="ME"/>
+        <h2>I am Chris Hume.</h2>
+        <p>Developer <a href="https://twitter.com/HarvestDelivery" target="_blank" class="harvest">@Harvest</a>, 
+          Recent grad from UT Austin, Lover of tech, sports, <!-- <a href="https://twitter.com/Medium" target="_blank" class="medium">Medium</a> --> and Jesus. <a href="" class="readMore">Read My Story</a>
+        </p>
+        <hr>
+        <ul>
+          <li><a href="https://medium.com/@yeddiejones" target="_blank" class="medium">Medium</a></li>
+          <li><a href="https://twitter.com/yeddiejones" target="_blank" class="twitter">Twitter</a></li>
+          <li><a href="https://github.com/cmh3258" target="_blank" class="github">GitHub</a></li>
+      </div>
+    </section>
+    
+    <section class="work-preview" id="work-preview">
+      <h2>Work.</h2>
+      <div class="previewContent">
+        <div class="left-preview">
+          <div class="">
+            <img src="harvestd.png" alt="harvest" class="harvestScreen"/>
+          </div>
+          <h3>Harvest</h3>
+          <p>
+            Developer. Building Front end in AngularJS, HTML, CSS, Jquery and Javascript. 
+            With the help of Yeoman, Grunt and Bower. <a href="" class="readMore">Read More</a>
+          </p>
+        </div>
+        <div class="middle-preview">
+          <div class="">
+            <img src="myoldsite.png" alt="harvest" class="oldSiteScreen"/>
+          </div>
+          <h3>Old Personal Site</h3>
+          <p>
+            Developed my old site with HTML, CSS and a bit of Javascript. <a href="" class="readMore">Read More</a>
+          </p>
+        </div>
+        <div class="right-preview">
+          <div class="">
+            <img src="recommenu.jpg" alt="harvest" class="recommenuScreen"/>
+          </div>
+          <h3>Recommenu</h3>
+          <p>
+            Developer. Built a B2B Rating product with AngularJS, HTML, CSS, Jquery and Javascript. 
+             <a href="" class="readMore">Read More</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-preview" id="work-preview">
+      <h2>Recent Articles.</h2>
+      <div class="previewContent">
+        <div class="left-preview">
+          <div class="">
+            <img src="harvestd.png" alt="harvest" class="harvestScreen"/>
+          </div>
+          <h3>Harvest</h3>
+          <p>
+            Developer. Building Front end in AngularJS, HTML, CSS, Jquery and Javascript. 
+            With the help of Yeoman, Grunt and Bower. <a href="" class="readMore">Read More</a>
+          </p>
+        </div>
+        <div class="middle-preview">
+          <div class="">
+            <img src="myoldsite.png" alt="harvest" class="oldSiteScreen"/>
+          </div>
+          <h3>Old Personal Site</h3>
+          <p>
+            Developed my old site with HTML, CSS and a bit of Javascript. <a href="" class="readMore">Read More</a>
+          </p>
+        </div>
+        <div class="right-preview">
+          <div class="">
+            <img src="recommenu.jpg" alt="harvest" class="recommenuScreen"/>
+          </div>
+          <h3>Recommenu</h3>
+          <p>
+            Developer. Built a B2B Rating product with AngularJS, HTML, CSS, Jquery and Javascript. 
+             <a href="" class="readMore">Read More</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <p>Glad you stopped by. Peace Fam.</p>
+    </footer>
+  </body>
+
+  <script>
+    $(document).ready(function(){
+      $( "h1" ).fadeIn("slow", function(){
+        $( "h4" ).fadeIn("slow");
+        $( "nav" ).fadeIn("slow");
+
+      });
+
+
+    });
+
+    $(window).scroll(function () {
+            console.log($(window).scrollTop() );
+      if($(window).scrollTop() > 200){
+        $('nav').css('display','inline-block');
+      }
+      else{
+        // $('nav').css('display','none');
+
+      }
+    });
+
+    
+
+      
+
+
+  </script>
+
+</html>
