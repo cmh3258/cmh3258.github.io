@@ -170,10 +170,6 @@
 		</div>
 
 		<script>
-			const defaultCity = 'Overview';
-			document.getElementById(defaultCity).style.display = "block";
-			console.log('document.getElementById(defaultCity): ', document.getElementById(defaultCity))
-			document.getElementById(defaultCity).classList.add('active');
 			function openCity(evt, cityName) {
 			  var i, tabcontent, tablinks;
 			  tabcontent = document.getElementsByClassName("tabcontent");
@@ -187,9 +183,10 @@
 			  document.getElementById(cityName).style.display = "block";
 			  evt.currentTarget.className += " active";
 			}
-			</script>
-
-
+			const defaultCity = 'Overview';
+			document.getElementById(defaultCity).style.display = "block";
+			console.log('document.getElementById(defaultCity): ', document.getElementById(defaultCity))
+			document.getElementById(defaultCity).classList.add('active');
+		</script>
 	</body>
-
 </html>
