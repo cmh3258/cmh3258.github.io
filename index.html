@@ -185,8 +185,10 @@
 			}
 			const defaultCity = 'Overview';
 			document.getElementById(defaultCity).style.display = "block";
-			console.log('document.getElementById(defaultCity): ', document.getElementById(defaultCity))
-			document.getElementById(defaultCity).classList.add('active');
+			const tablinks = document.getElementsByClassName("tablinks");
+			tablinks[0].className += " active";
+			// console.log('document.getElementById(defaultCity): ', document.getElementById(defaultCity))
+			// document.getElementById(defaultCity).classList.add('active');
 		</script>
 	</body>
 </html>
