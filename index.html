@@ -23,7 +23,7 @@
 			<div class="tabContainer flex gap-4 bg-gray-200 p-2 rounded-full">
 				<button class="tablinks" onclick="openCity(event, 'Overview')">Overview</button>
 				<button class="tablinks" onclick="openCity(event, 'Values')">Values</button>
-				<button class="tablinks" onclick="openCity(event, 'Ideas')">Ideas</button>
+				<button class="tablinks" onclick="openCity(event, 'Ideas')">Good Devs</button>
 			</div>
 			<div id="Overview" class="tabcontent">
 				<h2 class="text-[32px]">Overview:</h2>
@@ -44,14 +44,23 @@
 			<div id="Values" class="tabcontent">
 				<h2 class="text-[32px]">Values:</h2>
 				<ul class="ml-[40px] text-[18px] list-disc">
-					<li></li>
+					<li>Get sh*t done</li>
+					<li>Kindness and candor</li>
+					<li>Help one another</li>
+					<li>Creativity and experimentation</li>
+					<li>Have fun</li>
 				</ul>
 			</div>
 
 			<div id="Ideas" class="tabcontent">
-				<h2 class="text-[32px]">Ideas:</h2>
+				<h2 class="text-[32px]">What makes a good dev?</h2>
 				<ul class="ml-[40px] text-[18px] list-disc">
-					<li></li>
+					<li>If you don't know, ask</li>
+					<li>Communication is everything</li>
+					<li>Readibility in code is often more important than complicated effeciency</li>
+					<li>Sometimes you have to move fast and break sh*t (Don't break production)</li>
+					<li>Prioritize work, anything out of scope work needs a chat</li>
+					<li>Development is for the sake of business, push the business forward</li>
 				</ul>
 			</div>
 			
@@ -163,6 +172,7 @@
 		<script>
 			const defaultCity = 'Overview';
 			document.getElementById(defaultCity).style.display = "block";
+			document.getElementById(defaultCity).className += " active";
 			function openCity(evt, cityName) {
 			  var i, tabcontent, tablinks;
 			  tabcontent = document.getElementsByClassName("tabcontent");
