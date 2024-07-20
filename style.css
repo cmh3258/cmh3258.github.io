@@ -5,5 +5,6 @@ body {
 .quoteBubble {
   border: 1px solid #ccc;
   padding: 2em;
-  box-shadow: 4px 6px #e1e1e1;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
