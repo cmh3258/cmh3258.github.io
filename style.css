@@ -63,4 +63,5 @@ li {
   transition: 0.2s;
   /* border: 1px solid #ccc; */
   border-top: none;
+  margin-top: 1em;
 }
