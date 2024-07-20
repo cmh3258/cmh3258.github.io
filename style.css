@@ -38,14 +38,15 @@ li {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 10px 12px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 16px;
+  border-radius: 30px;
 }
 
 /* Change background color of buttons on hover */
 .tabContainer button:hover {
-  background-color: #ddd;
+  background-color: #ccc;
 }
 
 /* Create an active/current tablink class */
