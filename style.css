@@ -15,6 +15,10 @@ body {
 }
 a {
   text-decoration: underline !important;
+  transition: 0.2s;
+}
+a:hover {
+  color: rgb(234, 88, 12, 1)
 }
 li {
   margin-bottom: 10px !important;
