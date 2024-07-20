@@ -20,6 +20,20 @@
 	<body>
 		<div class="w-[600px] m-auto p-8">
 			<h1 class="text-[60px] font-600">Hello, I'm Chris</h1>
+			<div id="London" class="tabcontent">
+				<h3>London</h3>
+				<p>London is the capital city of England.</p>
+			  </div>
+			  
+			  <div id="Paris" class="tabcontent">
+				<h3>Paris</h3>
+				<p>Paris is the capital of France.</p> 
+			  </div>
+			  
+			  <div id="Tokyo" class="tabcontent">
+				<h3>Tokyo</h3>
+				<p>Tokyo is the capital of Japan.</p>
+			  </div>
 			<h2 class="text-[32px]">Overview:</h2>
 			<ul class="ml-[40px] text-[18px] list-disc">
 				<li>Software Developer with Front-End Focus</li>
@@ -137,6 +151,22 @@
 				</p>
 			</div>
 		</div>
+
+		<script>
+			function openCity(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+			</script>
 
 
 	</body>
